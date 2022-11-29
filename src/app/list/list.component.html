@@ -1,0 +1,13 @@
+<h1>Cool production people</h1>
+<table id="customers">
+  <tr>
+    <th>Vorname</th>
+    <th>Nachname</th>
+    <th>Position</th>
+  </tr>
+  <tr *ngFor="let person of people">
+    <td>{{ person.vorname }}</td>
+    <td>{{ person.nachname }}</td>
+    <td *ngIf="person.job">{{ person.job }}</td>
+  </tr>
+<table>
